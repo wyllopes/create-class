@@ -19,7 +19,9 @@ public class Cliente {
         Cliente cliente = new Cliente();
         cliente.setName("Wilson");
         cliente.setAddress("Rua Marcos E. Bovo");
-
+        
+        cliente.setId(1L);
+        System.out.println(cliente.getId());
         System.out.println(cliente.getName());
         System.out.println(cliente.getAddress());
 
@@ -27,8 +29,8 @@ public class Cliente {
 
     }
 
-    public void cadastrarAddress(String Address[]) {
-        setAddress(Arrays.toString(Address));
+    public void cadastrarAddress(String[] address) {
+        setAddress("Address");
 
 
     }
